@@ -1,0 +1,71 @@
+<div class="input-group input-group-sm mb-3">
+    <img >
+    <span class="input-group-text">Nombre</span>
+    <input
+      type="text"
+      class="form-control"
+      [(ngModel)]="comprador1"
+      name="comprador"
+      aria-label="Sizing example input"
+      aria-describedby="inputGroup-sizing-sm"
+    />
+  </div>
+  <div class="input-group input-group-sm mb-3">
+    <span class="input-group-text">Cantidad Comprados </span>
+    <input
+      type="text"
+      class="form-control"
+      [(ngModel)]="comprados"
+      name="comprado"
+      aria-label="Sizing example input"
+      aria-describedby="inputGroup-sizing-sm"
+    />
+  </div>
+  <div class="input-group input-group-sm mb-3">
+    <span class="input-group-text">Tarjeta Cinepolis</span>
+    <div class="col-12"> <br> Recuerde Marcar la casilla si cuenta con tarjeta Cinepolis </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" [(ngModel)]="PagoTarjeta" name="pagoTarjeta" value="si">
+      <label class="form-check-label" for="flexRadioDefault1">
+        Si, cuento con tarjeta
+      </label>
+    </div>
+    <div class="col-12"> <br></div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" [(ngModel)]="PagoTarjeta" name="pagoTarjeta" value="no" checked>
+      <label class="form-check-label" for="flexRadioDefault2">
+        No, no cuento con tarjeta
+      </label>
+    </div>
+  </div>
+  
+  <div class="input-group input-group-sm mb-3">
+    <span class="input-group-text">Cantidad de Boletos</span>
+    <input
+      type="text"
+      class="form-control"
+      [(ngModel)]="BoletosCantidad"
+      name="boletosCantidad"
+      aria-label="Sizing example input"
+      aria-describedby="inputGroup-sizing-sm"
+    />
+  </div>
+  <div class="col-12 my-2">
+    <h3> Su Total a a Pagar a Nombre de: </h3>
+  </div>
+  <div class="input-group input-group-sm mb-3">
+    <span class="input-group-text">Nombre cliente</span>
+    <input type="text" class="form-control" value="{{ Namecomprador }}" />
+  </div>
+  <div class="input-group input-group-sm mb-3">
+    <span class="input-group-text">Valor a Pagar</span>
+    <input type="text" class="form-control" value="{{ PrecioTotal }}" />
+  </div>
+  
+  <div class="col-12 mt-3">
+    <button (click)="procesar()" class="btn btn-success">
+      Realizar Pago
+    </button>
+  </div>
+  
+  
