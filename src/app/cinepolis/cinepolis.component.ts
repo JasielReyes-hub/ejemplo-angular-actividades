@@ -14,7 +14,7 @@ export class CinepolisComponent {
   BoletosCantidad: string = '';
 
 
-  // Varibles para operaciones
+  
   boletosPer: number = 0;
   Cliente: string = '';
   PrecioTotal: number = 0;
@@ -31,7 +31,7 @@ export class CinepolisComponent {
     this.boletosP = parseInt(this.comprados) * 7;
     this.boletosPer = parseInt(this.BoletosCantidad);
 
-    // porcentaje
+   
     this.porcentaje10 = (this.costoU * 10) / 100;
     this.porcentaje15 = (this.costoU * 15) / 100;
 

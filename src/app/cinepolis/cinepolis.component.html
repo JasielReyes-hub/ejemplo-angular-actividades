@@ -1,5 +1,12 @@
+<br>
+<div>    
+<img src="http://sic.gob.mx/images/128046" alt="Trulli" width="1080" height="333">
+
+</div>
+<br>
 <div class="input-group input-group-sm mb-3">
     <img >
+    
     <span class="input-group-text">Nombre</span>
     <input
       type="text"
@@ -11,7 +18,7 @@
     />
   </div>
   <div class="input-group input-group-sm mb-3">
-    <span class="input-group-text">Cantidad Comprados </span>
+    <span class="input-group-text">Personas a Comprar </span>
     <input
       type="text"
       class="form-control"
@@ -22,8 +29,8 @@
     />
   </div>
   <div class="input-group input-group-sm mb-3">
-    <span class="input-group-text">Tarjeta Cinepolis</span>
-    <div class="col-12"> <br> Recuerde Marcar la casilla si cuenta con tarjeta Cinepolis </div>
+    <span>Tarjeta Cinepolis</span>
+    <div class="col-12"> <p>  <br> Recuerde Marcar la casilla si cuenta con tarjeta Cinepolis  </p>
     <div class="form-check">
       <input class="form-check-input" type="radio" [(ngModel)]="PagoTarjeta" name="pagoTarjeta" value="si">
       <label class="form-check-label" for="flexRadioDefault1">
@@ -58,7 +65,7 @@
     <input type="text" class="form-control" value="{{ Namecomprador }}" />
   </div>
   <div class="input-group input-group-sm mb-3">
-    <span class="input-group-text">Valor a Pagar</span>
+    <span class="input-group-text">Total</span>
     <input type="text" class="form-control" value="{{ PrecioTotal }}" />
   </div>
   
@@ -67,5 +74,5 @@
       Realizar Pago
     </button>
   </div>
-  
+
   
