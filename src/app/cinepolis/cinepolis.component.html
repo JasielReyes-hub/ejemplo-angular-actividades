@@ -18,7 +18,7 @@
     />
   </div>
   <div class="input-group input-group-sm mb-3">
-    <span class="input-group-text">Personas a Comprar </span>
+    <span class="input-group-text"> Personas a Comprar </span>
     <input
       type="text"
       class="form-control"
@@ -46,8 +46,11 @@
     </div>
   </div>
   
+  <h3 id = aviso>-------- Cantidad de Boletos Limite por Persona son 7 ------ </h3>
   <div class="input-group input-group-sm mb-3">
-    <span class="input-group-text">Cantidad de Boletos</span>
+    
+    <span class="input-group-text"> Cantidad de Boletos </span>
+    
     <input
       type="text"
       class="form-control"
@@ -60,13 +63,21 @@
   <div class="col-12 my-2">
     <h3> Su Total a a Pagar a Nombre de: </h3>
   </div>
+  <div *ngIf="activar1"> 
   <div class="input-group input-group-sm mb-3">
-    <span class="input-group-text">Nombre cliente</span>
+    <span class="input-group-text"> Nombre cliente </span>
     <input type="text" class="form-control" value="{{ Namecomprador }}" />
   </div>
   <div class="input-group input-group-sm mb-3">
-    <span class="input-group-text">Total</span>
+    <span class="input-group-text"> Total </span>
     <input type="text" class="form-control" value="{{ PrecioTotal }}" />
+  </div>
+</div>
+  <div id="AVISO" *ngIf="MensajeActivar">
+    <h1>
+        {{Aviso}}
+    </h1>
+
   </div>
   
   <div class="col-12 mt-3">
